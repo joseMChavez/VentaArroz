@@ -16,14 +16,31 @@ namespace FactoriaForm.Registros
             InitializeComponent();
         }
 
+
         private void rCliente_Load(object sender, EventArgs e)
         {
 
         }
+        public void Limpiar()
+        {
+            ClienteIdtextBox.Clear();
+            NombretextBox.Clear();
+            ApellidotextBox.Clear();
+            CedulatextBox.Clear();
+            TellMaskedTextBox.Clear();
+            TellMaskedTextBox.Mask = "###-###-####";
+            EmailtextBox.Clear();
+            DireciontextBox.Clear();
+        }
 
+        private void ActivarBotones(bool ok)
+        {
+            ModificarButton.Enabled = ok;
+            EliminarButton.Enabled = ok;
+        }
         private void NuevoButton_Click(object sender, EventArgs e)
         {
-
+            Limpiar();
         }
 
         private void ModificarButton_Click(object sender, EventArgs e)
@@ -40,15 +57,6 @@ namespace FactoriaForm.Registros
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

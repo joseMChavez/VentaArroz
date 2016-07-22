@@ -97,6 +97,9 @@
     <EmbeddedResource Include="Registros\rFacturacion.resx">
       <DependentUpon>rFacturacion.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,10 +135,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataBase\FactoriasDd.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="DataBase\FactoriasDd_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>FactoriasDd.mdf</DependentUpon>
     </Content>
   </ItemGroup>

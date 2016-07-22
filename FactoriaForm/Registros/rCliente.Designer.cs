@@ -42,14 +42,14 @@
             this.ModificarButton = new System.Windows.Forms.Button();
             this.GuadarButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ClienteIdtextBox = new System.Windows.Forms.TextBox();
+            this.NombretextBox = new System.Windows.Forms.TextBox();
+            this.DireciontextBox = new System.Windows.Forms.TextBox();
+            this.EmailtextBox = new System.Windows.Forms.TextBox();
+            this.ApellidotextBox = new System.Windows.Forms.TextBox();
+            this.TellMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.CedulatextBox = new System.Windows.Forms.TextBox();
+            this.BuscarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ClienteErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 108);
+            this.label2.Location = new System.Drawing.Point(39, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 1;
@@ -74,7 +74,7 @@
             // Nombrelabel
             // 
             this.Nombrelabel.AutoSize = true;
-            this.Nombrelabel.Location = new System.Drawing.Point(38, 81);
+            this.Nombrelabel.Location = new System.Drawing.Point(38, 72);
             this.Nombrelabel.Name = "Nombrelabel";
             this.Nombrelabel.Size = new System.Drawing.Size(47, 13);
             this.Nombrelabel.TabIndex = 2;
@@ -83,7 +83,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(38, 133);
+            this.label4.Location = new System.Drawing.Point(39, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 3;
@@ -167,80 +167,80 @@
             this.EliminarButton.UseVisualStyleBackColor = true;
             this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
-            // textBox1
+            // ClienteIdtextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(85, 20);
-            this.textBox1.TabIndex = 13;
+            this.ClienteIdtextBox.Location = new System.Drawing.Point(112, 43);
+            this.ClienteIdtextBox.Name = "ClienteIdtextBox";
+            this.ClienteIdtextBox.Size = new System.Drawing.Size(85, 20);
+            this.ClienteIdtextBox.TabIndex = 13;
             // 
-            // textBox2
+            // NombretextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(112, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
-            this.textBox2.TabIndex = 14;
+            this.NombretextBox.Location = new System.Drawing.Point(112, 69);
+            this.NombretextBox.Name = "NombretextBox";
+            this.NombretextBox.Size = new System.Drawing.Size(194, 20);
+            this.NombretextBox.TabIndex = 14;
             // 
-            // textBox3
+            // DireciontextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(112, 217);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(358, 20);
-            this.textBox3.TabIndex = 15;
+            this.DireciontextBox.Location = new System.Drawing.Point(112, 217);
+            this.DireciontextBox.Name = "DireciontextBox";
+            this.DireciontextBox.Size = new System.Drawing.Size(358, 20);
+            this.DireciontextBox.TabIndex = 15;
             // 
-            // textBox4
+            // EmailtextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(112, 189);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(275, 20);
-            this.textBox4.TabIndex = 16;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.EmailtextBox.Location = new System.Drawing.Point(112, 189);
+            this.EmailtextBox.Name = "EmailtextBox";
+            this.EmailtextBox.Size = new System.Drawing.Size(275, 20);
+            this.EmailtextBox.TabIndex = 16;
+         
             // 
-            // textBox5
+            // ApellidotextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(112, 95);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(194, 20);
-            this.textBox5.TabIndex = 17;
+            this.ApellidotextBox.Location = new System.Drawing.Point(112, 100);
+            this.ApellidotextBox.Name = "ApellidotextBox";
+            this.ApellidotextBox.Size = new System.Drawing.Size(194, 20);
+            this.ApellidotextBox.TabIndex = 17;
             // 
-            // maskedTextBox1
+            // TellMaskedTextBox
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(112, 161);
-            this.maskedTextBox1.Mask = "000-000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(68, 20);
-            this.maskedTextBox1.TabIndex = 18;
+            this.TellMaskedTextBox.Location = new System.Drawing.Point(112, 161);
+            this.TellMaskedTextBox.Mask = "000-000-0000";
+            this.TellMaskedTextBox.Name = "TellMaskedTextBox";
+            this.TellMaskedTextBox.Size = new System.Drawing.Size(68, 20);
+            this.TellMaskedTextBox.TabIndex = 18;
             // 
-            // textBox6
+            // CedulatextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(112, 126);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(153, 20);
-            this.textBox6.TabIndex = 19;
+            this.CedulatextBox.Location = new System.Drawing.Point(112, 130);
+            this.CedulatextBox.Name = "CedulatextBox";
+            this.CedulatextBox.Size = new System.Drawing.Size(153, 20);
+            this.CedulatextBox.TabIndex = 19;
             // 
-            // button1
+            // BuscarButton
             // 
-            this.button1.Location = new System.Drawing.Point(231, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BuscarButton.Location = new System.Drawing.Point(231, 40);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(75, 23);
+            this.BuscarButton.TabIndex = 22;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.UseVisualStyleBackColor = true;
+           
             // 
             // rCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(536, 326);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BuscarButton);
+            this.Controls.Add(this.CedulatextBox);
+            this.Controls.Add(this.TellMaskedTextBox);
+            this.Controls.Add(this.ApellidotextBox);
+            this.Controls.Add(this.EmailtextBox);
+            this.Controls.Add(this.DireciontextBox);
+            this.Controls.Add(this.NombretextBox);
+            this.Controls.Add(this.ClienteIdtextBox);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuadarButton);
             this.Controls.Add(this.ModificarButton);
@@ -273,14 +273,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ErrorProvider ClienteErrorProvider;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BuscarButton;
+        private System.Windows.Forms.TextBox CedulatextBox;
+        private System.Windows.Forms.MaskedTextBox TellMaskedTextBox;
+        private System.Windows.Forms.TextBox ApellidotextBox;
+        private System.Windows.Forms.TextBox EmailtextBox;
+        private System.Windows.Forms.TextBox DireciontextBox;
+        private System.Windows.Forms.TextBox NombretextBox;
+        private System.Windows.Forms.TextBox ClienteIdtextBox;
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button GuadarButton;
         private System.Windows.Forms.Button ModificarButton;
