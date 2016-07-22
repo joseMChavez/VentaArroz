@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoriaForm", "FactoriaForm\FactoriaForm.csproj", "{CA1EE853-B544-4386-8904-27CD518C0E97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{0BA0F95E-B809-4926-885C-AFCA253CD481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{78A5CA11-370F-4205-A608-B497F47C9777}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA1EE853-B544-4386-8904-27CD518C0E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1EE853-B544-4386-8904-27CD518C0E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1EE853-B544-4386-8904-27CD518C0E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1EE853-B544-4386-8904-27CD518C0E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BA0F95E-B809-4926-885C-AFCA253CD481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA0F95E-B809-4926-885C-AFCA253CD481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA0F95E-B809-4926-885C-AFCA253CD481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA0F95E-B809-4926-885C-AFCA253CD481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A5CA11-370F-4205-A608-B497F47C9777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A5CA11-370F-4205-A608-B497F47C9777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A5CA11-370F-4205-A608-B497F47C9777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A5CA11-370F-4205-A608-B497F47C9777}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
