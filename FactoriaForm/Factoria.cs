@@ -28,5 +28,15 @@ namespace FactoriaForm
 
             factura.Show();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void sobreToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Jose Maximino Chavez/ 2013-0747", "Tarea de Lenguaje");
+        }
     }
 }

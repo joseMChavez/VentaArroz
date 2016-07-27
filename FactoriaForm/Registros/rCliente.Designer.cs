@@ -48,8 +48,8 @@
             this.EmailtextBox = new System.Windows.Forms.TextBox();
             this.ApellidotextBox = new System.Windows.Forms.TextBox();
             this.TellMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.CedulatextBox = new System.Windows.Forms.TextBox();
             this.BuscarButton = new System.Windows.Forms.Button();
+            this.CedulaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ClienteErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,7 +129,7 @@
             // 
             // NuevoButton
             // 
-            this.NuevoButton.Location = new System.Drawing.Point(72, 281);
+            this.NuevoButton.Location = new System.Drawing.Point(25, 281);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(75, 23);
             this.NuevoButton.TabIndex = 9;
@@ -139,7 +139,8 @@
             // 
             // ModificarButton
             // 
-            this.ModificarButton.Location = new System.Drawing.Point(179, 281);
+            this.ModificarButton.Enabled = false;
+            this.ModificarButton.Location = new System.Drawing.Point(122, 281);
             this.ModificarButton.Name = "ModificarButton";
             this.ModificarButton.Size = new System.Drawing.Size(75, 23);
             this.ModificarButton.TabIndex = 10;
@@ -149,7 +150,8 @@
             // 
             // GuadarButton
             // 
-            this.GuadarButton.Location = new System.Drawing.Point(289, 281);
+            this.GuadarButton.Enabled = false;
+            this.GuadarButton.Location = new System.Drawing.Point(221, 281);
             this.GuadarButton.Name = "GuadarButton";
             this.GuadarButton.Size = new System.Drawing.Size(75, 23);
             this.GuadarButton.TabIndex = 11;
@@ -159,7 +161,8 @@
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Location = new System.Drawing.Point(395, 281);
+            this.EliminarButton.Enabled = false;
+            this.EliminarButton.Location = new System.Drawing.Point(312, 281);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(75, 23);
             this.EliminarButton.TabIndex = 12;
@@ -173,6 +176,7 @@
             this.ClienteIdtextBox.Name = "ClienteIdtextBox";
             this.ClienteIdtextBox.Size = new System.Drawing.Size(85, 20);
             this.ClienteIdtextBox.TabIndex = 13;
+            this.ClienteIdtextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ClienteIdtextBox_KeyPress);
             // 
             // NombretextBox
             // 
@@ -180,12 +184,13 @@
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(194, 20);
             this.NombretextBox.TabIndex = 14;
+            this.NombretextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NombretextBox_KeyPress);
             // 
             // DireciontextBox
             // 
             this.DireciontextBox.Location = new System.Drawing.Point(112, 217);
             this.DireciontextBox.Name = "DireciontextBox";
-            this.DireciontextBox.Size = new System.Drawing.Size(358, 20);
+            this.DireciontextBox.Size = new System.Drawing.Size(275, 20);
             this.DireciontextBox.TabIndex = 15;
             // 
             // EmailtextBox
@@ -194,7 +199,7 @@
             this.EmailtextBox.Name = "EmailtextBox";
             this.EmailtextBox.Size = new System.Drawing.Size(275, 20);
             this.EmailtextBox.TabIndex = 16;
-         
+            this.EmailtextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EmailtextBox_KeyPress);
             // 
             // ApellidotextBox
             // 
@@ -202,21 +207,16 @@
             this.ApellidotextBox.Name = "ApellidotextBox";
             this.ApellidotextBox.Size = new System.Drawing.Size(194, 20);
             this.ApellidotextBox.TabIndex = 17;
+            this.ApellidotextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ApellidotextBox_KeyPress);
             // 
             // TellMaskedTextBox
             // 
             this.TellMaskedTextBox.Location = new System.Drawing.Point(112, 161);
             this.TellMaskedTextBox.Mask = "000-000-0000";
             this.TellMaskedTextBox.Name = "TellMaskedTextBox";
-            this.TellMaskedTextBox.Size = new System.Drawing.Size(68, 20);
+            this.TellMaskedTextBox.Size = new System.Drawing.Size(85, 20);
             this.TellMaskedTextBox.TabIndex = 18;
-            // 
-            // CedulatextBox
-            // 
-            this.CedulatextBox.Location = new System.Drawing.Point(112, 130);
-            this.CedulatextBox.Name = "CedulatextBox";
-            this.CedulatextBox.Size = new System.Drawing.Size(153, 20);
-            this.CedulatextBox.TabIndex = 19;
+            this.TellMaskedTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TellMaskedTextBox_KeyPress);
             // 
             // BuscarButton
             // 
@@ -226,15 +226,24 @@
             this.BuscarButton.TabIndex = 22;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
-           
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
+            // 
+            // CedulaMaskedTextBox
+            // 
+            this.CedulaMaskedTextBox.Location = new System.Drawing.Point(112, 133);
+            this.CedulaMaskedTextBox.Mask = "000-0000000-0";
+            this.CedulaMaskedTextBox.Name = "CedulaMaskedTextBox";
+            this.CedulaMaskedTextBox.Size = new System.Drawing.Size(85, 20);
+            this.CedulaMaskedTextBox.TabIndex = 23;
+            this.CedulaMaskedTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CedulaMaskedTextBox_KeyPress);
             // 
             // rCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 326);
+            this.ClientSize = new System.Drawing.Size(408, 326);
+            this.Controls.Add(this.CedulaMaskedTextBox);
             this.Controls.Add(this.BuscarButton);
-            this.Controls.Add(this.CedulatextBox);
             this.Controls.Add(this.TellMaskedTextBox);
             this.Controls.Add(this.ApellidotextBox);
             this.Controls.Add(this.EmailtextBox);
@@ -253,7 +262,9 @@
             this.Controls.Add(this.Nombrelabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ClienteIDlabel);
+            this.MaximizeBox = false;
             this.Name = "rCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Cliente.";
             this.Load += new System.EventHandler(this.rCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ClienteErrorProvider)).EndInit();
@@ -274,7 +285,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ErrorProvider ClienteErrorProvider;
         private System.Windows.Forms.Button BuscarButton;
-        private System.Windows.Forms.TextBox CedulatextBox;
         private System.Windows.Forms.MaskedTextBox TellMaskedTextBox;
         private System.Windows.Forms.TextBox ApellidotextBox;
         private System.Windows.Forms.TextBox EmailtextBox;
@@ -285,5 +295,6 @@
         private System.Windows.Forms.Button GuadarButton;
         private System.Windows.Forms.Button ModificarButton;
         private System.Windows.Forms.Button NuevoButton;
+        private System.Windows.Forms.MaskedTextBox CedulaMaskedTextBox;
     }
 }

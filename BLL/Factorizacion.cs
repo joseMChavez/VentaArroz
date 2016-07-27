@@ -6,31 +6,26 @@ using System.Text;
 
 namespace BLL
 {
-    class Factorizacion : ClaseMaestra
+    public class Factorizacion 
     {
-        public override bool Insertar()
-        {
-            throw new NotImplementedException();
+        public int FactId { get; set; }
+        public int Cantidad { get; set; }
+        public string Peso { get; set; }
+        public float Precio { get; set; }
+
+        public Factorizacion() {
+            FactId = 0;
+            Cantidad = 0;
+            Peso = "";
+            Precio = 0;
         }
 
-        public override bool Editar()
+        public Factorizacion(int cantidad, string peso, float precio)
         {
-            throw new NotImplementedException();
+            Cantidad = cantidad;
+            Peso = peso;
+            Precio = precio;
         }
 
-        public override bool Eliminar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool Buscar(int IdBuscado)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override DataTable Listado(string Campos, string Condicion, string Orden)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

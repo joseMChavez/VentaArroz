@@ -27,10 +27,10 @@ namespace FactoriaForm.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DataBase\\Fact" +
-            "oriasDd.mdf;Integrated Security=True;Connect Timeout=30")]
-        public string FactoriasDbSetting {
+            "oriasDb.mdf;Integrated Security=True")]
+        public string ConStr {
             get {
-                return ((string)(this["FactoriasDbSetting"]));
+                return ((string)(this["ConStr"]));
             }
         }
     }
