@@ -12,11 +12,11 @@ namespace FactoriaForm.Registros
 {
     public partial class rFacturacion : Form
     {
-        Venta venta;
+        Ventas venta;
         public rFacturacion()
         {
             InitializeComponent();
-            venta = new Venta();
+            venta = new Ventas();
 
         }
         private void rFacturacion_Load(object sender, EventArgs e)
